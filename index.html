@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu CV</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        h1, h2 {
+            color: #060a0e;
+        }
+
+        
+        .section {
+            margin-bottom: 20px;
+        }
+
+        
+        .menu {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        
+        .menu a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003d7a;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="menu">
+        <a href="#sobremim">Sobre Mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </div>
+
+    
+    <div class="container">
+        <h1>Roberto de Souza Soares</h1>
+        <p>Email: juniorolivergol@gmail.com</p>
+        <p>Telefone: (69) 99261-0329</p>
+        <hr>
+        
+        
+        <div id="sobremim" class="section">
+            <h2>Sobre Mim</h2>
+            <p>Sou uma pessoa curiosa e apaixonada por tecnologia, sempre em busca de aprender e explorar novas áreas do conhecimento. Desde cedo, me interessei por como as coisas funcionam e isso me levou a mergulhar no mundo da programação e desenvolvimento web. Adoro resolver problemas e criar soluções que possam facilitar a vida das pessoas, seja por meio de um site bem projetado ou de um sistema automatizado.
+
+                Além do meu interesse profissional, sou um grande entusiasta de esportes ao ar livre, como trilhas e ciclismo, que me permitem desconectar da rotina e me reconectar com a natureza. Também tenho um grande apreço por leitura, especialmente em temas relacionados à tecnologia, ficção científica e desenvolvimento pessoal.
+                
+                Considero-me uma pessoa organizada e dedicada, com uma abordagem prática para alcançar meus objetivos. Valorizo a colaboração e acredito que o trabalho em equipe é essencial para qualquer projeto bem-sucedido. Estou sempre disposto a enfrentar novos desafios e a aprender com as experiências, buscando evoluir continuamente tanto profissional quanto pessoalmente.</p>
+        </div>
+        
+        
+        <div id="formacao" class="section">
+            <h2>Formação</h2>
+            <p><strong>Uninter</strong> - Analise e desenvolvimento de Sistemas</p>
+            <p>Atualmente, estou cursando Análise e Desenvolvimento de Sistemas, onde venho adquirindo uma sólida base em programação, arquitetura de sistemas, e desenvolvimento de software. Durante o curso, tenho explorado diversas linguagens de programação, como Python, Java e JavaScript, além de aprender sobre banco de dados, engenharia de software, e metodologias ágeis.
+
+                Minha formação tem sido essencial para desenvolver habilidades técnicas e analíticas, capacitando-me a planejar, projetar e implementar soluções tecnológicas eficientes e inovadoras. Também tenho aprendido a importância da segurança da informação e boas práticas de desenvolvimento, aplicando esses conhecimentos em projetos práticos ao longo do curso.
+                
+                Estou constantemente buscando aplicar o que aprendo em situações do mundo real, seja por meio de projetos acadêmicos ou pessoais, sempre com o objetivo de aprimorar minhas competências e estar preparado para os desafios do mercado de trabalho na área de TI.</p>
+    
+        </div>
+        
+        
+        <div id="contato" class="section">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
